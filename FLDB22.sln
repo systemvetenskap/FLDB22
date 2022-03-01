@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLDB22", "FLDB22\FLDB22.csproj", "{A75A44AB-B0A6-4E96-9C1D-935F55C4EE6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A75A44AB-B0A6-4E96-9C1D-935F55C4EE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75A44AB-B0A6-4E96-9C1D-935F55C4EE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75A44AB-B0A6-4E96-9C1D-935F55C4EE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75A44AB-B0A6-4E96-9C1D-935F55C4EE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57BE503F-FE48-41C0-A3A7-1EAB8AD669D0}
+	EndGlobalSection
+EndGlobal
