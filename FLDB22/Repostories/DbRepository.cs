@@ -19,5 +19,16 @@ namespace FLDB22.Repostories
 
             _connectionString = config.GetConnectionString("dbConn");
         }
+
+        public void GetPerson()
+        {
+            using var conn = new NpgsqlConnection(_connectionString);
+            conn.Open();
+
+            using var cmd = new NpgsqlCommand();
+            cmd.CommandText ="select * from person";
+            cmd.Connection = conn;
+            var result = cmd.ExecuteNonQuery();
+        }
     }
 }

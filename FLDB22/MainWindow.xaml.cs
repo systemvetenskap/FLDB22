@@ -25,6 +25,8 @@ namespace FLDB22
         {
             InitializeComponent();
             var db = new DbRepository();
+
+            db.GetPerson();
         }
     }
 }
