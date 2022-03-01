@@ -23,7 +23,7 @@ namespace FLDB22.Repostories
         public void GetPerson()
         {
             using var conn = new NpgsqlConnection(_connectionString);
-            // Kopplar upp mig mot databasen
+            // Kopplar upp mig mot databasen.
             conn.Open();
             
 
