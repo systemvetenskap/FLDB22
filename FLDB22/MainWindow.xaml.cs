@@ -26,7 +26,18 @@ namespace FLDB22
             InitializeComponent();
             var db = new DbRepository();
 
-            db.GetPerson();
+            var persons =  db.GetPersons();
+
+            try
+            {
+                db.AddPerson();
+                var person = db.GetPersonById(22);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
