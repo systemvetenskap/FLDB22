@@ -1,4 +1,5 @@
-﻿using FLDB22.Repostories;
+﻿using FLDB22.Models;
+using FLDB22.Repostories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,13 +26,28 @@ namespace FLDB22
         {
             InitializeComponent();
             var db = new DbRepository();
+            var people = new List<Person>();
 
+            var person = new Person()
+            {
+                 Firstname="Arne",
+                 Lastname = "Anka"
+            };
+            people.Add(person);
+
+            person = new Person()
+            {
+                Firstname = "Stina",
+                Lastname = "Gås"
+            };
+            people.Add(person);
             var persons =  db.GetPersons();
 
             try
             {
+                var newPeople = db.AddPersons(people);
                 db.AddPerson();
-                var person = db.GetPersonById(22);
+                //var person = db.GetPersonById(22);
             }
             catch (Exception ex)
             {
